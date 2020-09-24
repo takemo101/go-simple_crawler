@@ -130,10 +130,10 @@ func main() {
 	paths := scrape.Scraping()
 
 	if paths != nil {
-		// 取得したパスをソートする
+		// 取得したリンク配列をソートする
 		sort.Sort(sort.StringSlice(paths))
 
-		// パスをコンソールに表示
+		// リンク一覧をコンソールに表示
 		for _, path := range paths {
 			fmt.Println(path)
 		}
